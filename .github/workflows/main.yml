@@ -20,14 +20,11 @@ jobs:
       - name: Install and Build 🔧 
         run: |
           npm install
-          npm test
           npm run build
           
       - name: Run Tests 🧪 
         run: |
-          npm install
           npm test
-          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
