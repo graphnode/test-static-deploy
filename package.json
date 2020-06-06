@@ -1,0 +1,15 @@
+{
+  "name": "test-static-deploy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Testing deploy of static website.",
+  "scripts": {
+    "build": "copyfiles -u 1 src/**/*.* dist/",
+    "test": "exit 0"
+  },
+  "author": "Diogo Gomes <dgomes@graphnode.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "copyfiles": "^2.3.0"
+  }
+}
