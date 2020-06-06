@@ -4,12 +4,14 @@
   "version": "1.0.0",
   "description": "Testing deploy of static website.",
   "scripts": {
-    "build": "copyfiles -u 1 src/**/*.* dist/",
+    "clean": "shx rm -rf ./dist",
+    "build": "shx cp -r ./src/. ./dist",
     "test": "exit 0"
   },
   "author": "Diogo Gomes <dgomes@graphnode.com>",
   "license": "MIT",
   "devDependencies": {
-    "copyfiles": "^2.3.0"
-  }
+    "shx": "^0.3.2"
+  },
+  "dependencies": {}
 }
